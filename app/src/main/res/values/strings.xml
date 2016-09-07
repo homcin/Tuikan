@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">悦心</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="MainActivity_title_news">新闻</string>
+    <string name="MainActivity_title_photo">美图</string>
+    <string name="MainActivity_title_video">视频</string>
+    <string name="MainActivity_title_about">关于</string>
+
+    <string name="PhotoActivity_action_wallpaper">设为壁纸</string>
+
+    <string name="VideoFragment_label_developing">正在开发中</string>
+
+    <string name="AboutFragment_label_nickname">小新丶很红</string>
+    <string name="AboutFragment_desc_introduction">深圳大学，Android 开发</string>
+    <string name="AboutFragment_label_grade">评分</string>
+    <string name="AboutFragment_label_contact_me">联系我</string>
+    <string name="AboutFragment_label_help">帮助</string>
+    <string name="AboutFragment_label_setting">设置</string>
+    <string name="AboutFragment_label_check_update">检查更新</string>
+
+    <string name="PhotoActivity_toast_success">设置壁纸成功</string>
+    <string name="PhotoActivity_dialog_msg">保存图片</string>
+
+</resources>
