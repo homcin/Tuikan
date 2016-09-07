@@ -5,5 +5,5 @@
 •	EventBus发布订阅事件，之后会采用RxJava。<Br>
 •	retrofit2完成http请求。<Br>
 •	引入retrolambda使用Lambda表达式。<Br>
-•	RecyclerView, ViewPager, WebView等空间的使用。<Br>
+•	RecyclerView, ViewPager, WebView等控件的使用。<Br>
 ## 截图
