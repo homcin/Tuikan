@@ -7,6 +7,8 @@
 •	引入retrolambda使用Lambda表达式。<Br>
 •	RecyclerView, ViewPager, WebView等控件的使用。<Br>
 ## 截图
+ <img src="https://github.com/homcin/ZhifuNews/blob/master/img/1.png" width = "300" height = "200"align=center />
+ <img src="https://github.com/homcin/ZhifuNews/blob/master/img/1.png" width = "300" height = "200"align=center />
 ![](https://github.com/homcin/ZhifuNews/blob/master/img/1.png =100x100)  
 ![](https://github.com/homcin/ZhifuNews/blob/master/img/2.png =100x100)  
 ![](https://github.com/homcin/ZhifuNews/blob/master/img/3.png =100x100)  
