@@ -8,3 +8,6 @@
 •	RecyclerView, ViewPager, WebView等控件的使用。<Br>
 ## 截图
 ![](https://github.com/homcin/ZhifuNews/blob/master/img/1.png)  
+![](https://github.com/homcin/ZhifuNews/blob/master/img/2.png)  
+![](https://github.com/homcin/ZhifuNews/blob/master/img/3.png)  
+![](https://github.com/homcin/ZhifuNews/blob/master/img/4.png)  
