@@ -10,4 +10,5 @@
  <img src="https://github.com/homcin/ZhifuNews/blob/master/img/1.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
  <img src="https://github.com/homcin/ZhifuNews/blob/master/img/2.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
  <img src="https://github.com/homcin/ZhifuNews/blob/master/img/3.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
+ <img src="https://github.com/homcin/ZhifuNews/blob/master/img/5.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
  <img src="https://github.com/homcin/ZhifuNews/blob/master/img/4.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
