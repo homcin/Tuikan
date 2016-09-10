@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "E:\\AndroidProject\\OpenSourceApp\\OpenEyes-master\\vitamio2\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\mediacontroller_button.xml",
+        "source": "E:\\AndroidProject\\OpenSourceApp\\OpenEyes-master\\vitamio2\\build\\intermediates\\bundles\\debug\\res\\drawable\\mediacontroller_button.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\OpenSourceApp\\OpenEyes-master\\vitamio2\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\scrubber_control_selector_holo.xml",
+        "source": "E:\\AndroidProject\\OpenSourceApp\\OpenEyes-master\\vitamio2\\build\\intermediates\\bundles\\debug\\res\\drawable\\scrubber_control_selector_holo.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\OpenSourceApp\\OpenEyes-master\\vitamio2\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\scrubber_progress_horizontal_holo_dark.xml",
+        "source": "E:\\AndroidProject\\OpenSourceApp\\OpenEyes-master\\vitamio2\\build\\intermediates\\bundles\\debug\\res\\drawable\\scrubber_progress_horizontal_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\ZhihuNews\\vitamio2\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\scrubber_progress_horizontal_holo_dark.xml",
+        "source": "D:\\ZhihuNews\\vitamio2\\build\\intermediates\\bundles\\debug\\res\\drawable\\scrubber_progress_horizontal_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\ZhihuNews\\vitamio2\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\mediacontroller_button.xml",
+        "source": "D:\\ZhihuNews\\vitamio2\\build\\intermediates\\bundles\\debug\\res\\drawable\\mediacontroller_button.xml"
+    },
+    {
+        "merged": "D:\\ZhihuNews\\vitamio2\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\scrubber_control_selector_holo.xml",
+        "source": "D:\\ZhihuNews\\vitamio2\\build\\intermediates\\bundles\\debug\\res\\drawable\\scrubber_control_selector_holo.xml"
+    }
+]

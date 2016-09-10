@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
 import android.widget.TextView;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
@@ -14,9 +13,9 @@ import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.grace.zhihunews.R;
 import com.grace.zhihunews.ui.base.BaseActivity;
 import com.grace.zhihunews.ui.fragment.AboutFragment;
+import com.grace.zhihunews.ui.fragment.FeatureListFragment;
 import com.grace.zhihunews.ui.fragment.GirlsFragment;
 import com.grace.zhihunews.ui.fragment.NewsListFragment;
-import com.grace.zhihunews.ui.fragment.VideoFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,8 +31,8 @@ public class MainActivity extends BaseActivity {
 
     private NewsListFragment mNewsListFragment;
     private GirlsFragment mGirlsFragment;
-    private VideoFragment mVideoFragment;
     private AboutFragment mAboutFragment;
+    private FeatureListFragment mFeatureListFragment;
     private FragmentManager fm;
 
     @Override
@@ -138,11 +137,11 @@ public class MainActivity extends BaseActivity {
                         ft.add(R.id.frame_layout, mGirlsFragment);
                     }
                 break;
-            case 2 : if (mVideoFragment != null) {
-                        ft.show(mVideoFragment);
+            case 2 : if (mFeatureListFragment != null) {
+                        ft.show(mFeatureListFragment);
                     } else {
-                        mVideoFragment = new VideoFragment();
-                        ft.add(R.id.frame_layout, mVideoFragment);
+                        mFeatureListFragment = new FeatureListFragment();
+                        ft.add(R.id.frame_layout, mFeatureListFragment);
                     }
                 break;
             case 3 : if (mAboutFragment != null) {
@@ -163,8 +162,8 @@ public class MainActivity extends BaseActivity {
         if (mGirlsFragment != null) {
             ft.hide(mGirlsFragment);
         }
-        if (mVideoFragment != null) {
-            ft.hide(mVideoFragment);
+        if (mFeatureListFragment != null) {
+            ft.hide(mFeatureListFragment);
         }
         if (mAboutFragment != null) {
             ft.hide(mAboutFragment);

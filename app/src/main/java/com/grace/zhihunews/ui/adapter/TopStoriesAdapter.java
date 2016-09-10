@@ -2,6 +2,7 @@ package com.grace.zhihunews.ui.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.grace.zhihunews.R;
+import com.grace.zhihunews.event.GotoNewsDetailEvent;
 import com.grace.zhihunews.network.entity.TopStory;
 import com.squareup.picasso.Picasso;
 import com.zanlabs.widget.infiniteviewpager.InfinitePagerAdapter;
@@ -18,6 +20,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import de.greenrobot.event.EventBus;
 
 /**
  * Created by Administrator on 2016/9/1.
@@ -39,6 +42,7 @@ public class TopStoriesAdapter extends InfinitePagerAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup containner) {
+        //Log.e("TopStoryPosition", String.valueOf(position));
         View view;
         ViewHolder viewHolder;
         if (convertView == null) {
@@ -56,7 +60,7 @@ public class TopStoriesAdapter extends InfinitePagerAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                EventBus.getDefault().post(new GotoNewsDetailEvent(topStory.getId()));
             }
         });
         return view;

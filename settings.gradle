@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':vitamio', ':vitamio2'
 include ':infiniteviewpager'

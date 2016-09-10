@@ -50,16 +50,12 @@ public class NewsListFragment extends BaseFragment implements NewsListContact.IN
 
     @BindView(R.id.swipe_refresh_layout)
     SwipeRefreshLayout mSwipeRefreshLayout;
-
     @BindView(R.id.rv_news_list)
     RecyclerView rvNewsList;
-
     @BindView(R.id.rv_header)
     RecyclerViewHeader rvHeader;
-
     @BindView(R.id.view_pager)
     InfiniteViewPager mViewPager;
-
     @BindView(R.id.indicator)
     CirclePageIndicator mIndicator;
     @BindView(R.id.fab)

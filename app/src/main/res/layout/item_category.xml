@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount = "2"
+    android:columnCount = "4" >
+
+    <LinearLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_picture0"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/iv_category0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="萌宠"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@color/gray_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_picture1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/iv_category1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="萌宠"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@color/gray_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_picture2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/iv_category2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="萌宠"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@color/gray_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_picture3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/iv_category3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="萌宠"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@color/gray_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_picture4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/iv_category4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="萌宠"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@color/gray_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_picture5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/iv_category5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="萌宠"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@color/gray_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_picture6"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/iv_category6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="萌宠"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@color/gray_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_picture7"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/iv_category7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="萌宠"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@color/gray_dark"/>
+    </LinearLayout>
+
+</GridLayout>

@@ -15,4 +15,6 @@
     <color name="gray_middle">#666666</color>
     <color name="gray_dark">#333333</color>
     <color name="divider_grey">#eeeeee</color>
+
+    <color name="black">#000000</color>
 </resources>
