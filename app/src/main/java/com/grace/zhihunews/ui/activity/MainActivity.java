@@ -169,4 +169,14 @@ public class MainActivity extends BaseActivity {
             ft.hide(mAboutFragment);
         }
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        //super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        //super.onRestoreInstanceState(savedInstanceState);
+    }
 }
