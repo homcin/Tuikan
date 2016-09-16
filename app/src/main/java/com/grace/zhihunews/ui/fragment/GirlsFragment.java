@@ -76,7 +76,7 @@ public class GirlsFragment extends BaseFragment implements GirlsContact.IGirlsVi
                 Integer pageCount = pages.get(pages.size() - 1);
                 pageCount += 1;
                 pages.add(pageCount);
-                mGirlsPresenter.loadBenefit(pageCount);
+                mGirlsPresenter.loadBenefit(pageCount, true, false);
             }
         });
         mSwipeRefreshLayout.setColorSchemeColors(getResources().getColor(R.color.colorAccent));
@@ -88,7 +88,7 @@ public class GirlsFragment extends BaseFragment implements GirlsContact.IGirlsVi
             pages.clear();
             page = 1;
             pages.add(page);
-            mGirlsPresenter.loadBenefit(page);
+            mGirlsPresenter.loadBenefit(page, true, true);
 
             (new Handler()).postDelayed(new Runnable() {
                 @Override
@@ -102,7 +102,7 @@ public class GirlsFragment extends BaseFragment implements GirlsContact.IGirlsVi
 
     @Override
     protected void loadData() {
-        mGirlsPresenter.loadBenefit(page);
+        mGirlsPresenter.loadBenefit(page, false, false);
     }
 
     @Override

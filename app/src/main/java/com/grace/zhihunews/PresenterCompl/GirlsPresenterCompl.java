@@ -23,8 +23,8 @@ public class GirlsPresenterCompl implements GirlsContact.IGirlsPresenter {
     }
 
     @Override
-    public void loadBenefit(int page) {
-        girlsProvider.getGirls(page);
+    public void loadBenefit(int page, boolean isLoadMore, boolean needClear) {
+        girlsProvider.getGirls(page, isLoadMore, needClear);
     }
 
     public void onEvent(GirlsLoadedEvent event) {

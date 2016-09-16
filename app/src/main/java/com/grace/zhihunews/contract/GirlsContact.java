@@ -19,7 +19,7 @@ public interface GirlsContact {
 
     interface IGirlsPresenter extends BasePresenter {
 
-        void loadBenefit(int page);
+        void loadBenefit(int page, boolean isLoadMore, boolean needClear);
 
     }
 }

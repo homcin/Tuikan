@@ -41,10 +41,12 @@ public class NewsListPresenterCompl implements NewsListContact.INewsListPresente
         mNewsListProvider.getBeforeNews(date);
     }
 
+
     @Override
-    public void loadTopStories(Boolean needRefresh) {
-        mNewsListProvider.getTopStories(needRefresh);
+    public void refreshData() {
+        mNewsListProvider.refreshData();
     }
+
 
     //EventBus的onEvent
     public void onEvent(LatestNewsLoadedEvent event) {
@@ -56,7 +58,7 @@ public class NewsListPresenterCompl implements NewsListContact.INewsListPresente
     }
 
     public void onEvent(TopStoriesLoadedEvent event) {
-        mNewsListView.showTopStories(event.topstories);
+        //mNewsListView.showTopStories(event.topstories);
     }
 
     public void onEvent(LoadFailureEvent event) {

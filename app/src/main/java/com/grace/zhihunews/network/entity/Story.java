@@ -1,12 +1,20 @@
 package com.grace.zhihunews.network.entity;
 
+import com.litesuits.orm.db.annotation.Collate;
+import com.litesuits.orm.db.annotation.Ignore;
+import com.litesuits.orm.db.annotation.MapCollection;
+import com.litesuits.orm.db.annotation.Table;
+import com.litesuits.orm.db.annotation.Unique;
+import com.litesuits.orm.db.annotation.UniqueCombine;
+
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Administrator on 2016/9/1.
  */
-public class Story implements Serializable {
+public class Story extends BaseEntity implements Serializable {
 
     private int type;
     private int id;

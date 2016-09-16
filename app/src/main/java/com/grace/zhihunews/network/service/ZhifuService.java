@@ -18,6 +18,7 @@ public interface ZhifuService {
     Call<LatestNews> getLatestNews();
 
     //http://news.at.zhihu.com/api/4/news/before/20160831
+    //返回的是20160830的头条。url需延后一天。
     @GET("api/4/news/before/{date}")
     Call<BeforeNews> getBeforeNews(@Path("date") String date);
 

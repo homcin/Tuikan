@@ -11,7 +11,7 @@ import retrofit2.http.Path;
  */
 public interface GankService {
 
-    @GET("api/data/福利/10/{page}")
+    @GET("api/data/福利/20/{page}")
     Call<Benefit> getBenefit(@Path("page") int page);
 
 }

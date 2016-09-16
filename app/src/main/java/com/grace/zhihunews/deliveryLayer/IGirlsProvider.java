@@ -5,6 +5,6 @@ package com.grace.zhihunews.deliveryLayer;
  */
 public interface IGirlsProvider {
 
-    void getGirls(int page);
+    void getGirls(int page, boolean isLoadMore, boolean needClear);
 
 }

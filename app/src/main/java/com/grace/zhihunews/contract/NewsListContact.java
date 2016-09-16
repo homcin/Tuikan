@@ -15,7 +15,7 @@ public interface NewsListContact {
     interface INewsListView extends BaseView {
 
         //顶部Banner循环轮播图片
-        void showTopStories(List<TopStory> topStories);
+        //void showTopStories(List<TopStory> topStories);
 
         void showLatestNews(LatestNews latestNews);
 
@@ -31,7 +31,9 @@ public interface NewsListContact {
 
         void loadBeforeNews(String date);
 
-        void loadTopStories(Boolean needRefresh);
+        void refreshData();
+
+        //void loadTopStories(Boolean needRefresh);
 
     }
 }

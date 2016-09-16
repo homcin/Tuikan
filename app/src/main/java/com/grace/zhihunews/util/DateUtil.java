@@ -13,7 +13,7 @@ import java.util.Date;
 public class DateUtil {
 
     /**
-     * 获取最新日期
+     * 获取最新日期，由于知乎URL的原因，比今天还延后了一天
      *
      * @return
      */
@@ -23,6 +23,16 @@ public class DateUtil {
         if (calendar.get(Calendar.HOUR_OF_DAY) >= 7) {//知乎日报7点之前不更新，所以7点以前最新列表应该加载之前一天的内容
             calendar.add(Calendar.DAY_OF_YEAR, 1);
         }
+        return sdf.format(calendar.getTime());
+    }
+
+    /**
+     * 获取今天的日期
+     * @return
+     */
+    public static String getTodayDate() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+        Calendar calendar = Calendar.getInstance();
         return sdf.format(calendar.getTime());
     }
 

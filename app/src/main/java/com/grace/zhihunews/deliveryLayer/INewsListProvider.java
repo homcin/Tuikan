@@ -9,5 +9,7 @@ public interface INewsListProvider {
 
     void getBeforeNews(String date);
 
-    void getTopStories(boolean needRefresh);
+    void refreshData();
+
+    //void getTopStories(boolean needRefresh);
 }

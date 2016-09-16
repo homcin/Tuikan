@@ -1,14 +1,18 @@
 package com.grace.zhihunews.network.entity;
 
 import com.litesuits.orm.db.annotation.Column;
+import com.litesuits.orm.db.annotation.Table;
+import com.litesuits.orm.db.annotation.Unique;
 
 import java.util.Date;
 
 /**
  * Created by Administrator on 2016/9/2.
  */
-public class Girl {
+@Table("Girl")
+public class Girl extends BaseEntity {
 
+    @Unique
     private String url;
     private String who;
     private String createdAt;

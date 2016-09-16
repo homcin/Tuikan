@@ -113,8 +113,7 @@ public class NewsListFragment extends BaseFragment implements NewsListContact.IN
         mSwipeRefreshLayout.setOnRefreshListener(() -> {
             mSwipeRefreshLayout.setRefreshing(true);
 
-            mNewsListPresenter.loadTopStories(true);
-
+            mNewsListPresenter.refreshData();
             String latestDate = DateUtil.getLatestDate();
             if (dateList != null) {
                 dateList.removeAll(dateList);
@@ -129,7 +128,7 @@ public class NewsListFragment extends BaseFragment implements NewsListContact.IN
 
     @Override
     protected void loadData() {
-        mNewsListPresenter.loadTopStories(false);
+        //mNewsListPresenter.loadTopStories(false);
 
         String latestDate = DateUtil.getLatestDate();
         dateList.add(latestDate);
@@ -144,22 +143,16 @@ public class NewsListFragment extends BaseFragment implements NewsListContact.IN
     }
 
     @Override
-    public void showTopStories(List<TopStory> topStories) {
-        Log.d("TopStories", String.valueOf(topStories.size()));
+    public void showLatestNews(LatestNews latestNews) {
+        List<TopStory> topStories = latestNews.getTopStories();
         TopStoriesAdapter topStoriesAdapter = new TopStoriesAdapter(getActivity(), topStories);
         mViewPager.setAdapter(topStoriesAdapter);
         mViewPager.setAutoScrollTime(3000);
         mViewPager.startAutoScroll();
         mIndicator.setViewPager(mViewPager);
-    }
 
-    @Override
-    public void showLatestNews(LatestNews latestNews) {
         mStories.clear();
         List<Story> stories = latestNews.getStories();
-        for (int i = 0; i < stories.size(); i++) {
-            stories.get(i).setDate(latestNews.getDate());
-        }
         mStories.addAll(stories);
         storiesAdapter.notifyDataSetChanged();
     }
@@ -167,9 +160,6 @@ public class NewsListFragment extends BaseFragment implements NewsListContact.IN
     @Override
     public void showBeforeNews(BeforeNews beforeNews) {
         List<Story> stories = beforeNews.getStories();
-        for (int i = 0; i < stories.size(); i++) {
-            stories.get(i).setDate(beforeNews.getDate());
-        }
         mStories.addAll(stories);
         int curSize = storiesAdapter.getItemCount();
         storiesAdapter.notifyItemRangeChanged(curSize, mStories.size() - 1);
