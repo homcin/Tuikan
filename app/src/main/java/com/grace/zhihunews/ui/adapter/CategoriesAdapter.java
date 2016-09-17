@@ -29,7 +29,12 @@ public class CategoriesAdapter extends InfinitePagerAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup container) {
-        GridView gridView = (GridView) LayoutInflater.from(mContext).inflate(R.layout.item_viewpager, container, false);
+        GridView gridView;
+        if (convertView == null) {
+            gridView = (GridView) LayoutInflater.from(mContext).inflate(R.layout.item_viewpager, container, false);
+        } else {
+            gridView = (GridView) convertView;
+        }
         gridView.setAdapter(new GridViewAdapter(mContext, mCategories, position));
         return gridView;
     }
@@ -39,5 +44,9 @@ public class CategoriesAdapter extends InfinitePagerAdapter {
         int pageSize = 8;
         int pageCount = (int) Math.ceil(mCategories.size() * 1.0 / pageSize);
         return pageCount;
+    }
+
+    class ViewHolder {
+        GridView gridView;
     }
 }
