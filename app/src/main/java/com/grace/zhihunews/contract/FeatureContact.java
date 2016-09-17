@@ -4,6 +4,7 @@ import com.grace.zhihunews.contract.base.BasePresenter;
 import com.grace.zhihunews.contract.base.BaseView;
 import com.grace.zhihunews.network.entity.video.Category;
 import com.grace.zhihunews.network.entity.video.Feature;
+import com.grace.zhihunews.network.entity.video.Item;
 
 import java.util.List;
 
@@ -14,17 +15,21 @@ public interface FeatureContact {
 
     interface IFeatureView extends BaseView {
 
+        void showCategories(List<Category> categories);
+
         void showTodayFeature(Feature feature);
 
-        void showCategories(List<Category> categories);
+        void showCategoryFeature(List<Item> itemList);
 
     }
 
     interface IFeaturePresenter extends BasePresenter {
 
+        void loadCategories();
+
         void loadTodayFeature();
 
-        void loadCategories();
+        void loadCategoryFeature(String categoryName);
 
     }
 }

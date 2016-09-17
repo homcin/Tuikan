@@ -1,5 +1,7 @@
 package com.grace.zhihunews.ui.activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
@@ -30,6 +32,14 @@ public class ShowVideoActivity extends AppCompatActivity implements MediaPlayer.
     private MediaController mMediaController;
     private CustomMediaController mCustomMediaController;
     private VideoView mVideoView;
+
+    public static void actionStart(Context context, String video, String title) {
+        Intent intent = new Intent(context, ShowVideoActivity.class);
+        intent.putExtra("video", video);
+        intent.putExtra("title", title);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

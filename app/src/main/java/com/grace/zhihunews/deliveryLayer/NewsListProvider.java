@@ -50,12 +50,12 @@ public class NewsListProvider implements INewsListProvider {
     public void getLatestNews(){
         String todayDate = DateUtil.getTodayDate();
         QueryBuilder<LatestNews> qbLatestNews = new QueryBuilder<LatestNews>(LatestNews.class)
-                .where("date like ?", new String[]{todayDate});
+                .where("date like ?",new Object[]{todayDate});
         ArrayList<LatestNews> latestNewsArrayList = LiteOrmManager.getInstance(app).query(qbLatestNews);
         if (latestNewsArrayList.size() > 0) {
             LatestNews latestNews = latestNewsArrayList.get(0);
             QueryBuilder<TopStory> dbTopStory = new QueryBuilder<TopStory>(TopStory.class)
-                    .where("date like ?", new String[]{todayDate});
+                    .where("date like ?", new Object[]{todayDate});
             ArrayList<TopStory> topStories = LiteOrmManager.getInstance(app).query(dbTopStory);
             List<Story> stories = DBHelper.getInstance(app).loadStoriesByDate(todayDate);
             latestNews.setStories(stories);
@@ -90,7 +90,7 @@ public class NewsListProvider implements INewsListProvider {
     @Override
     public void getBeforeNews(final String date){
         QueryBuilder<BeforeNews> qb = new QueryBuilder<BeforeNews>(BeforeNews.class)
-                .where("date like ?", new String[]{date});
+                .where("date like ?", new Object[]{date});
         ArrayList<BeforeNews> beforeNewsArrayList = LiteOrmManager.getInstance(app).query(qb);
         if (beforeNewsArrayList.size() > 0) {
             List<Story> stories = DBHelper.getInstance(app).loadStoriesByDate(date);

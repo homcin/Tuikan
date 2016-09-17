@@ -1,28 +1,23 @@
 package com.grace.zhihunews.ui.fragment;
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.View;
 
 import com.bartoszlipinski.recyclerviewheader.RecyclerViewHeader;
 import com.grace.zhihunews.PresenterCompl.FeaturePresenterCompl;
-import com.grace.zhihunews.PresenterCompl.GirlsPresenterCompl;
 import com.grace.zhihunews.R;
 import com.grace.zhihunews.contract.FeatureContact;
-import com.grace.zhihunews.contract.GirlsContact;
-import com.grace.zhihunews.network.entity.Girl;
 import com.grace.zhihunews.network.entity.video.Category;
 import com.grace.zhihunews.network.entity.video.Feature;
 import com.grace.zhihunews.network.entity.video.Item;
 import com.grace.zhihunews.ui.adapter.CategoriesAdapter;
-import com.grace.zhihunews.ui.adapter.GirlsAdapter;
 import com.grace.zhihunews.ui.adapter.ItemListAdapter;
+import com.grace.zhihunews.ui.adapter.PreviewAdapter;
 import com.grace.zhihunews.ui.base.BaseFragment;
 import com.grace.zhihunews.ui.listener.EndlessRecyclerViewScrollListener;
 import com.zanlabs.widget.infiniteviewpager.InfiniteViewPager;
@@ -59,6 +54,10 @@ public class FeatureListFragment extends BaseFragment implements FeatureContact.
     private ItemListAdapter mItemListAdapter;
     private CategoriesAdapter mCategoriesAdapter;
 
+    private PreviewAdapter mAdapter;
+    private List<String> mCategoryNameList = new ArrayList<>();
+    private List<List<Item>> mItemsList = new ArrayList<>();
+
     @Override
     protected int getLayoutResId() {
         return R.layout.fragment_feature_list;
@@ -66,9 +65,13 @@ public class FeatureListFragment extends BaseFragment implements FeatureContact.
 
     @Override
     protected void initVariables() {
+        mAdapter = new PreviewAdapter(getActivity(), mCategoryNameList, mItemsList);
+        mFeaturePresenter = new FeaturePresenterCompl(this);
+        /*
         mItemList = new ArrayList<>();
         mItemListAdapter = new ItemListAdapter(getActivity(), mItemList);
         mFeaturePresenter = new FeaturePresenterCompl(this);
+        */
     }
 
     @Override
@@ -76,7 +79,8 @@ public class FeatureListFragment extends BaseFragment implements FeatureContact.
         unbinder = ButterKnife.bind(this, view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         rvFeatures.setLayoutManager(layoutManager);
-        rvFeatures.setAdapter(mItemListAdapter);
+        //rvFeatures.setAdapter(mItemListAdapter);
+        rvFeatures.setAdapter(mAdapter);
         rvHeader.attachTo(rvFeatures, true);
         rvFeatures.addOnScrollListener(new EndlessRecyclerViewScrollListener(layoutManager) {
             @Override
@@ -128,18 +132,31 @@ public class FeatureListFragment extends BaseFragment implements FeatureContact.
     //GirlsContact.IGirlsView接口方法
     @Override
     public void showTodayFeature(Feature feature) {
+        mCategoryNameList.add("今日精选");
+        mItemsList.add(feature.getIssueList().get(0).getItemList().subList(0, 4));
+        mAdapter.notifyDataSetChanged();
+        /*
         mItemList.clear();
         Log.d("data", String.valueOf(feature.getIssueList().get(0).getItemList().size()));
         mItemList.addAll(feature.getIssueList().get(0).getItemList());
         int curSize = mItemListAdapter.getItemCount();
         mItemListAdapter.notifyItemRangeChanged(curSize, mItemList.size() - 1);
+        */
     }
 
     @Override
     public void showCategories(List<Category> categories) {
+        Log.d("Category", String.valueOf(categories.size()));
         mCategoriesAdapter = new CategoriesAdapter(getActivity(), categories);
         mViewPager.setAdapter(mCategoriesAdapter);
         mIndicator.setViewPager(mViewPager);
+    }
+
+    @Override
+    public void showCategoryFeature(List<Item> itemList) {
+        mCategoryNameList.add(itemList.get(0).getData().getCategory());
+        mItemsList.add(itemList);
+        mAdapter.notifyDataSetChanged();
     }
 
     @Override

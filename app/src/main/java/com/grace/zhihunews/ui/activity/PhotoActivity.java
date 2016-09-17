@@ -41,10 +41,11 @@ public class PhotoActivity extends AppCompatActivity {
     private String mImageUrl;
     private boolean mIsHidden = false;
 
-    public static Intent newIntent(Context context, String url) {
+    public static void actionStart(Context context, String url) {
         Intent intent = new Intent(context, PhotoActivity.class);
         intent.putExtra(PhotoActivity.KEY_IMG_URL, url);
-        return intent;
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
     }
 
     @Override

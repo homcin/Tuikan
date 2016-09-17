@@ -13,7 +13,7 @@ public class VideoFragment extends BaseFragment {
 
     @Override
     protected int getLayoutResId() {
-        return R.layout.fragment_video;
+        return R.layout.fragment_about;
     }
 
     @Override

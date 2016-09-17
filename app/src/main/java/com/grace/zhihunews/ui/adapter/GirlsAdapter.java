@@ -52,8 +52,7 @@ public class GirlsAdapter extends RecyclerView.Adapter<GirlsAdapter.ViewHolder> 
         View girlView = LayoutInflater.from(context).inflate(R.layout.item_girl, parent, false);
         final ViewHolder viewHolder = new ViewHolder(girlView);
         girlView.setOnClickListener(v -> {
-            Intent intent = PhotoActivity.newIntent(mContext, girls.get(viewHolder.getAdapterPosition()).getUrl());
-            mContext.startActivity(intent);
+            PhotoActivity.actionStart(mContext, girls.get(viewHolder.getAdapterPosition()).getUrl());
         });
         return viewHolder;
     }

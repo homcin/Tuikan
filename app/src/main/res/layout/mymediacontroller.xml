@@ -20,7 +20,7 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
                 android:background="@null"
-                android:src="@drawable/ic_player_close_white" />
+                android:src="@mipmap/ic_action_navigation_chevron_left" />
 
             <TextView
                 android:id="@+id/mediacontroller_filename"
@@ -40,7 +40,7 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
                 android:background="@null"
-                android:src="@drawable/ic_action_share_without_padding" />
+                android:src="@mipmap/ic_action_social_share" />
 
             <ImageButton
                 android:id="@+id/mediacontroller_favorite"
@@ -48,7 +48,7 @@
                 android:layout_height="match_parent"
                 android:layout_toLeftOf="@id/mediacontroller_share"
                 android:background="@null"
-                android:src="@drawable/ic_action_favorites" />
+                android:src="@mipmap/ic_action_favorite" />
         </RelativeLayout>
 
         <ImageButton

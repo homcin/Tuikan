@@ -7,13 +7,10 @@ import java.util.List;
  */
 public class Issue {
 
-    private long publishTime; //发布时间
+    //private long publishTime; //发布时间
     private int count; //List<Item> itemList中Item的个数
     private List<Item> itemList;
 
-    public long getPublishTime() {
-        return publishTime;
-    }
 
     public int getCount() {
         return count;
@@ -21,10 +18,6 @@ public class Issue {
 
     public List<Item> getItemList() {
         return itemList;
-    }
-
-    public void setPublishTime(long publishTime) {
-        this.publishTime = publishTime;
     }
 
     public void setCount(int count) {
