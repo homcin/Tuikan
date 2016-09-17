@@ -8,7 +8,10 @@
 •	RecyclerView, ViewPager, WebView等控件的使用。<Br>
 ## 截图
  <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/1.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
- <img src="https://github.com/homcin/ZhifuNews/blob/master/img/2.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
- <img src="https://github.com/homcin/ZhifuNews/blob/master/img/3.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
- <img src="https://github.com/homcin/ZhifuNews/blob/master/img/5.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
- <img src="https://github.com/homcin/ZhifuNews/blob/master/img/4.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
+ <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/2.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
+ <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/3.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
+ <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/4.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
+ <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/5.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
+ <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/6.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
+ <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/7.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
+ <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/8.png" width = "480" height = "270" align=center hspace="16" vspace="16"/>
