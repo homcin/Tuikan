@@ -17,6 +17,7 @@ public class Data {
     private Cover cover; //封面类
 
     private String text; //如"- Sep. 09 -", item类型为textHeader时的Data成员text
+    private String image;
 
     public int getId() {
         return id;
@@ -62,6 +63,10 @@ public class Data {
         return text;
     }
 
+    public String getImage() {
+        return image;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -104,6 +109,10 @@ public class Data {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public static class Consumption {

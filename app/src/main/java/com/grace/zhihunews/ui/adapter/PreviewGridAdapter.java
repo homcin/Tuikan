@@ -61,13 +61,21 @@ public class PreviewGridAdapter extends BaseAdapter {
             view = convertView;
             viewHolder = (ViewHolder) view.getTag();
         }
-        String title = mItemList.get(position).getData().getTitle();
-        viewHolder.tvTitle.setText(title);
-        String feed = mItemList.get(position).getData().getCover().getFeed();
-        Uri coverUrl = Uri.parse(feed);
-        Picasso.with(mContext).load(coverUrl).placeholder(mContext.getDrawable(R.drawable.bg_holder_brown)).into(viewHolder.ivCover);
-        String playUrl = mItemList.get(position).getData().getPlayUrl();
-        view.setOnClickListener(v -> ShowVideoActivity.actionStart(mContext, playUrl, title));
+        if (mItemList.get(position).getType().equals("banner1")) {
+            viewHolder.tvTitle.setText("广告");
+            String image = mItemList.get(position).getData().getImage();
+            Uri coverUrl = Uri.parse(image);
+            Picasso.with(mContext).load(coverUrl).placeholder(mContext.getDrawable(R.drawable.bg_holder_brown)).into(viewHolder.ivCover);
+
+        } else {
+            String title = mItemList.get(position).getData().getTitle();
+            viewHolder.tvTitle.setText(title);
+            String feed = mItemList.get(position).getData().getCover().getFeed();
+            Uri coverUrl = Uri.parse(feed);
+            Picasso.with(mContext).load(coverUrl).placeholder(mContext.getDrawable(R.drawable.bg_holder_brown)).into(viewHolder.ivCover);
+            String playUrl = mItemList.get(position).getData().getPlayUrl();
+            view.setOnClickListener(v -> ShowVideoActivity.actionStart(mContext, playUrl, title));
+        }
         return view;
     }
 
