@@ -15,3 +15,5 @@
  <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/6.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
  <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/7.png" width = "270" height = "480" align=center hspace="16" vspace="16"/>
  <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/8.png" width = "480" height = "270" align=center hspace="16" vspace="16"/>
+ ## 最后
+ 各位看官，如若对你有帮助，请star下。本人大三正在寻找工作，多谢帮忙。接下来还会不断完善与与重构这个项目。
