@@ -17,3 +17,6 @@
  <img src="https://github.com/homcin/Tuikan/blob/master/screenshot/8.png" width = "480" height = "270" align=center hspace="16" vspace="16"/>
 ## 最后 
  各位看官，如若对你有帮助，请star下。本人正在校招中寻找工作，多谢帮忙。接下来还会不断完善与与重构这个项目。
+## 不好意思
+ 最近由于忙着校招准备，时间紧迫。有问题请发邮箱：horxis@gmail.com
+ 项目较大的原因是直接地compile几个project，之后会删掉，不好意思。
