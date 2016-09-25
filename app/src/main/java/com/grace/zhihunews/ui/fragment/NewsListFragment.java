@@ -116,7 +116,7 @@ public class NewsListFragment extends BaseFragment implements NewsListContact.IN
             mNewsListPresenter.refreshData();
             String latestDate = DateUtil.getLatestDate();
             if (dateList != null) {
-                dateList.removeAll(dateList);
+                dateList.clear();
                 dateList.add(latestDate);
             }
             mNewsListPresenter.loadLatestNews();

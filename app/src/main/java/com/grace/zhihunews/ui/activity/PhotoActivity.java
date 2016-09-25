@@ -54,7 +54,11 @@ public class PhotoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_photo);
         ButterKnife.bind(this);
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        try {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
 

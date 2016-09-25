@@ -84,6 +84,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 stories.add(story);
             } while (cursor.moveToNext());
         }
+        cursor.close();
         return stories;
     }
 
