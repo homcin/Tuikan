@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\ZhihuNews\vitamio2\src\main\assets"/><source path="D:\ZhihuNews\vitamio2\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\ZhihuNews\vitamio2\src\release\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\Users\Administrator\AndroidStudioProjects\Tuikan\vitamio2\src\main\assets"/><source path="E:\Users\Administrator\AndroidStudioProjects\Tuikan\vitamio2\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="E:\Users\Administrator\AndroidStudioProjects\Tuikan\vitamio2\src\release\assets"/></dataSet></merger>
