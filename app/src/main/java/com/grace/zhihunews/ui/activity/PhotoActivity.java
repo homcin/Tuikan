@@ -131,7 +131,7 @@ public class PhotoActivity extends AppCompatActivity {
 
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {//123
         int id = item.getItemId();
         switch (id) {
             case R.id.action_share:
