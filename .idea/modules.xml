@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Tuikan.iml" filepath="$PROJECT_DIR$/Tuikan.iml" />
       <module fileurl="file://$PROJECT_DIR$/ZhihuNews.iml" filepath="$PROJECT_DIR$/ZhihuNews.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infiniteviewpager/infiniteviewpager.iml" filepath="$PROJECT_DIR$/infiniteviewpager/infiniteviewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/infiniteviewpager/infiniteviewpager.iml" filepath="$PROJECT_DIR$/infiniteviewpager/infiniteviewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/vitamio/vitamio.iml" filepath="$PROJECT_DIR$/vitamio/vitamio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vitamio/vitamio.iml" filepath="$PROJECT_DIR$/vitamio/vitamio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vitamio2/vitamio2.iml" filepath="$PROJECT_DIR$/vitamio2/vitamio2.iml" />
       <module fileurl="file://$PROJECT_DIR$/vitamio2/vitamio2.iml" filepath="$PROJECT_DIR$/vitamio2/vitamio2.iml" />
     </modules>
   </component>
